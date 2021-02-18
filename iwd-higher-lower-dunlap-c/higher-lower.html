@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./higher-lower.css">
+    <title>Higher-Lower</title>
+</head>
+<body>
+<div class="container topMargin">
+    <h1>Higher - Lower</h1>
+    <p>Please push button below to enter the range you'd like to guess between starting at 1.</p>
+    <button type="button" class="btn btn-primary btn-sm" onclick="numRangeOnClick()">Number Range</button>
+    <p id="userRangeMessage" class="form-text text-muted"></p>
+</div>
+<form class="container topMargin">
+    <div class="form-group">
+        <label for="numGuess">Enter a Number To Guess</label>
+        <input type="text" class="form-control" id="numGuess" aria-describedby="emailHelp">
+        <small id="guessFieldText" class="form-text text-muted">Number must be a positive integer above 1.</small>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="userGuessOnClick(event, numGuess.value)">Submit</button>
+</form>
+<div class="container topMargin">
+    <h2 id="userResultsMessage" class="correctGuessStyling">
+    </h2>
+    <h4 id="incorrectGuess" class="incorrectGuessStyling">
+    </h4>
+</div>
+<script src="higher-lower.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

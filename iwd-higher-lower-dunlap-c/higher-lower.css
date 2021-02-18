@@ -1,0 +1,11 @@
+.topMargin {
+    margin-top: 2rem;
+}
+
+.incorrectGuessStyling {
+    color: red;
+}
+
+.correctGuessStyling {
+    color: forestgreen;
+}
